@@ -35,28 +35,32 @@
 #         print(a)
 
 # 4.	Write a Python Program to Check Armstrong Number?
-# num = int(input("any 4 digit number to check Armstrong Number\n"))
-
-# Changed num variable to string,
-# and calculated the length (number of digits)
-# order = len(str(num))
-# # initialize sum
-# sum = 0
-# # find the sum of the cube of each digit
-# temp = num
-# while temp > 0:
-#     digit = temp % 10
-#     sum += digit ** order
-#     temp //= 10
+# 153
+# 370
+# 371
+# 407
+# 1634
 #
-# # display the result
-# if num == sum:
-#     print(num, "is an Armstrong number")
-# else:
-#     print(num, "is not an Armstrong number")
+n = int(input("any 4 digit number to check Armstrong Number\n"))
+# to find for the power of number
+order = len(str(n))
+# initialization of sum
+sum1 = 0
+temp = n
+# loop for check till positive or zero
+while temp > 0:
+    digit = temp % 10
+    sum1 = sum1 + digit ** order
+    # for return with int value as 0.0=0
+    temp = temp // 10
+    # print & check with valid number
+if n == sum1:
+    print(n, ",this number is a armstrong & last converted digit of n ={0}".format(temp))
+else:
+    print("this number not a armstrong number")
 
 # 5.	Write a Python Program to Find Armstrong Number in an Interval?
-
+#
 # lower = int(input("enter lower limit to find Armstrong Number in an Interval"))
 # upper = int(input("enter upper limit to find Armstrong Number in an Interval"))
 #
@@ -78,14 +82,13 @@
 #         print(num)
 
 # 6.	Write a Python Program to Find the Sum of Natural Numbers?
-n1 = int(input("Enter a number"))
-if n1 < 0:
-    print("enter positive number only")
-else:
-    sum = 0
-    while n1 > 0:
-        sum = sum + n1
-        n1 = n1 - 1
-        # break
-    print("the sum is", sum)
-
+# n1 = int(input("Enter a number"))
+# if n1 < 0:
+#     print("enter positive number only")
+# else:
+#     sum = 0
+#     while n1 > 0:
+#         sum = sum + n1
+#         n1 = n1 - 1
+#         # break
+#     print("the sum is", sum)
