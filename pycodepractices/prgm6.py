@@ -38,8 +38,25 @@
 
 
 # 4.	Write a Python Program to calculate the natural logarithm of any number?
-import math
-intNum = float(input("Enter number for log value"))
-print("log value")
+# import math
+#
+# intNum = float(input("Enter number for log value\n"))
+# print("log value", math.log(intNum))
 
 # 5.	Write a Python Program for cube sum of first n natural numbers?
+
+# Returns the sum of series
+def sumOfSeries(n):
+    # sum = 0
+    # for i in range(1, n + 1):
+    #     sum += i * i * i
+    #
+    # return sum
+
+    x = (n * (n + 1) / 2)
+    return int(x * x)
+
+
+# Driver Function
+n = int(input("Enter natural numbers to find sum of series \n"))
+print(sumOfSeries(n))
